@@ -19,7 +19,7 @@ namespace MVVMDemo.Model
         private string lastName;
 
         /// <summary>
-        /// fdasf.
+        /// property1.
         /// </summary>
         public event PropertyChangedEventHandler PropertyChanged;
 
