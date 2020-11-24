@@ -10,7 +10,7 @@ using System.Windows;
 namespace MVVMDemo
 {
   /// <summary>
-  /// fdasfdfdasfasdfasdf
+  /// fdasfdfdas
   /// </summary>
   public partial class MainWindow : Window
   {

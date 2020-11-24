@@ -12,7 +12,7 @@ using System.Collections.ObjectModel;
 namespace MVVMDemo.ViewModel
 {
   /// <summary>
-  /// fdsafas.
+  /// fdsafasfdsafsadf.
   /// </summary>
   public class StudentViewModel
   {
