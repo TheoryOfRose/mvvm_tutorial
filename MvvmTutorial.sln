@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMDemo", "MVVMDemo\MVVMDemo.csproj", "{CA919BE4-4C19-4684-9EEA-89F20BEF996D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmTutorial", "MvvmTutorial.csproj", "{8CBA22BF-BCA8-4D99-9BEB-8709BBBF408B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CA919BE4-4C19-4684-9EEA-89F20BEF996D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CA919BE4-4C19-4684-9EEA-89F20BEF996D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CA919BE4-4C19-4684-9EEA-89F20BEF996D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CA919BE4-4C19-4684-9EEA-89F20BEF996D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CBA22BF-BCA8-4D99-9BEB-8709BBBF408B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CBA22BF-BCA8-4D99-9BEB-8709BBBF408B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CBA22BF-BCA8-4D99-9BEB-8709BBBF408B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CBA22BF-BCA8-4D99-9BEB-8709BBBF408B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {174F3943-969D-41DA-8CD6-5B4590D982E2}
+		SolutionGuid = {7A5B9D5E-14BE-4C6C-AF6D-364E952FFF22}
 	EndGlobalSection
 EndGlobal

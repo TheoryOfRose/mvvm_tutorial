@@ -10,18 +10,18 @@ using System.Windows.Controls;
 
 namespace MVVMDemo.Views
 {
+  /// <summary>
+  /// StudentView.xaml에 대한 상호 작용 논리.
+  /// </summary>
+  public partial class StudentView : UserControl
+  {
     /// <summary>
-    /// StudentView.xaml에 대한 상호 작용 논리.
+    /// Initializes a new instance of the <see cref="StudentView"/> class.
     /// </summary>
-    public partial class StudentView : UserControl
+    public StudentView()
     {
-      /// <summary>
-      /// Initializes a new instance of the <see cref="StudentView"/> class.
-      /// </summary>
-      public StudentView()
-      {
-              this.InitializeComponent();
-              this.DataContext = new MVVMDemo.ViewModel.StudentViewModel();
-      }
-     }
+      this.InitializeComponent();
+      this.DataContext = new MVVMDemo.ViewModel.StudentViewModel();
+    }
+  }
 }
