@@ -25,7 +25,7 @@ namespace MVVMDemo.ViewModel
     }
 
     /// <summary>
-    /// Gets or sets students.
+    /// Gets or set students.
     /// </summary>
     public ObservableCollection<StudentModel> Students
     {
