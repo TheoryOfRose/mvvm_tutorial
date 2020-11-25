@@ -34,7 +34,7 @@ namespace MVVMDemo.ViewModel
     }
 
     /// <summary>
-    /// laod.
+    /// laod
     /// </summary>
     public void LoadStudents()
     {
@@ -48,4 +48,3 @@ namespace MVVMDemo.ViewModel
     }
   }
 }
-
