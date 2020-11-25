@@ -44,7 +44,7 @@ this.LoadStudents();
       students.Add(new StudentModel { FirstName = "Allen", LastName = "Brown" });
       students.Add(new StudentModel { FirstName = "Linda", LastName = "Hamerski" });
 
-      this.Students = students;
+      Students = students;
     }
   }
 }
