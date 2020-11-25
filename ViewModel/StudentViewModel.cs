@@ -48,4 +48,3 @@ namespace MVVMDemo.ViewModel
     }
   }
 }
-
