@@ -111,6 +111,6 @@
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PreBuildEvent>node ../../Scripts/init.js</PreBuildEvent>
+    <PreBuildEvent>copy /Y "..\..\Scripts\git_hooks\pre-commit" "..\..\.git\hooks\pre-commit"</PreBuildEvent>
   </PropertyGroup>
 </Project>
