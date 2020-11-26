@@ -5,7 +5,7 @@ DIFF_FILES=$(git diff --exit-code --cached --name-only --diff-filter=ACM -- "*.c
 
 echo "Auto formatting for the project by dotnet-format"
 
-if [ -z "${FILES}" ]; then
+if [ -z "${DIFF_FILES}" ]; then
   exit 0
 else
   echo "The following source codes are modified"
