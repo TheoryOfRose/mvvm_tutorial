@@ -21,7 +21,7 @@ fi
 
 echo "Check code style by StyleCop"
 
-./Scripts/git_hooks/StyleCopCLI/StyleCopCLI.exe -sln ${HOME_DIR}/*.sln
+./Scripts/git_hooks/StyleCopCLI/StyleCopCLI.exe -sln ${HOME_DIR}/*.sln -set stylecop.json
 if [ $? -ne 0 ]; then
   exit 1
 fi
