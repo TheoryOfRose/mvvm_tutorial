@@ -18,4 +18,9 @@ else
   git add .
 fi
 
+./${HOME_DIR}/Scripts/git_hooks/StyleCopCLI/StyleCopCLI.exe -sln ${HOME_DIR}/*.sln
+if [ $? -ne 0 ]; then
+  exit 1
+fi
+
 exit 0
