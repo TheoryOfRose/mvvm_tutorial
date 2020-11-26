@@ -17,7 +17,7 @@ namespace MVVMDemo
         /// <summary>
         /// Initializes a new instance of the <see cref="MainWindow"/> class.
         /// fdasfasdf.
-        /// </summary>
+        /// </summary
         public MainWindow()
         {
             this.InitializeComponent();

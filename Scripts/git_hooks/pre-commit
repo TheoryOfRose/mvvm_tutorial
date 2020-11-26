@@ -4,6 +4,7 @@ HOME_DIR=$(git rev-parse --show-toplevel)
 DIFF_FILES=$(git diff --exit-code --cached --name-only --diff-filter=ACM -- "*.cs")
 
 echo "Auto formatting for the project by dotnet-format"
+echo "$(pwd)"
 
 if [ -z "${DIFF_FILES}" ]; then
   exit 0
@@ -18,7 +19,9 @@ else
   git add .
 fi
 
-./${HOME_DIR}/Scripts/git_hooks/StyleCopCLI/StyleCopCLI.exe -sln ${HOME_DIR}/*.sln
+echo "Check code style by StyleCop"
+
+./Scripts/git_hooks/StyleCopCLI/StyleCopCLI.exe -sln ${HOME_DIR}/*.sln
 if [ $? -ne 0 ]; then
   exit 1
 fi
