@@ -7,7 +7,7 @@ echo "Auto formatting for the project by dotnet-format"
 echo "$(pwd)"
 
 if [ -z "${DIFF_FILES}" ]; then
-  exit 0
+  echo "There is no source code change"
 else
   echo "The following source codes are modified"
   echo "${DIFF_FILES}"
