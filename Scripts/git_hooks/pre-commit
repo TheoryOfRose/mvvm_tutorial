@@ -21,9 +21,14 @@ fi
 
 echo "Check code style by StyleCop"
 
-./Scripts/git_hooks/StyleCopCLI/StyleCopCLI.exe -sln ${HOME_DIR}/*.sln -set stylecop.json
+STYLE_CHECK_COMMAND="dotnet ./Scripts/git_hooks/StyleCop.Analyzers/StyleCopAnalyzers.CLI.dll check ./"
+STYLE_CHECK_RESULT=`${STYLE_CHECK_COMMAND}`
+
 if [ $? -ne 0 ]; then
+  echo "${STYLE_CHECK_RESULT}"
   exit 1
 fi
+
+echo "Code style check is over"
 
 exit 0
