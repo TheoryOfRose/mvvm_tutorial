@@ -6,45 +6,45 @@
 // </copyright>
 // ---------------------------------------------------------------------
 
-using MVVMDemo.Model;
 using System.Collections.ObjectModel;
+using MVVMDemo.Model;
 
 namespace MVVMDemo.ViewModel
 {
-  /// <summary>
-  /// fdsafasfdsafsadf.
-  /// </summary>
-  public class StudentViewModel
-  {
     /// <summary>
-    /// Initializes a new instance of the <see cref="StudentViewModel"/> class.
+    /// fdsafasfdsafsadf.
     /// </summary>
-    public StudentViewModel()
+    public class StudentViewModel
     {
-this.LoadStudents();
+        /// <summary>
+        /// Initializes a new instance of the <see cref="StudentViewModel"/> class.
+        /// </summary>
+        public StudentViewModel()
+        {
+            this.LoadStudents();
+        }
+
+        /// <summary>
+        /// Gets or sets students.
+        /// </summary>
+        public ObservableCollection<StudentModel> Students
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// laod
+        /// </summary>
+        public void LoadStudents()
+        {
+            ObservableCollection<StudentModel> students = new ObservableCollection<StudentModel>();
+
+            students.Add(new StudentModel { FirstName = "Mark", LastName = "Allain" });
+            students.Add(new StudentModel { FirstName = "Allen", LastName = "Brown" });
+            students.Add(new StudentModel { FirstName = "Linda", LastName = "Hamerski" });
+
+            Students = students;
+        }
     }
-
-    /// <summary>
-    /// Gets or sets students.
-    /// </summary>
-    public ObservableCollection<StudentModel> Students
-    {
-      get;
-      set;
-    }
-
-    /// <summary>
-    /// laod
-    /// </summary>
-    public void LoadStudents()
-    {
-      ObservableCollection<StudentModel> students = new ObservableCollection<StudentModel>();
-
-      students.Add(new StudentModel { FirstName = "Mark", LastName = "Allain" });
-      students.Add(new StudentModel { FirstName = "Allen", LastName = "Brown" });
-      students.Add(new StudentModel { FirstName = "Linda", LastName = "Hamerski" });
-
-     Students = students;
-    }
-  }
 }

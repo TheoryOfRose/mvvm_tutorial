@@ -10,82 +10,82 @@ using System.ComponentModel;
 
 namespace MVVMDemo.Model
 {
-  /// <summary>
-  /// Student.
-  /// </summary>
-  public class StudentModel : INotifyPropertyChanged
-  {
-    private string firstName;
-    private string lastName;
-
     /// <summary>
-    /// property1.
+    /// Student.
     /// </summary>
-    public event PropertyChangedEventHandler PropertyChanged;
-
-    /// <summary>
-    /// Gets or sets firstname.
-    /// </summary>
-    public string FirstName
+    public class StudentModel : INotifyPropertyChanged
     {
-      get
-      {
-        return this.firstName;
-      }
+        private string firstName;
+        private string lastName;
 
-      set
-      {
-        if (this.firstName != value)
+        /// <summary>
+        /// property1.
+        /// </summary>
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        /// <summary>
+        /// Gets or sets firstname.
+        /// </summary>
+        public string FirstName
         {
-          this.firstName = value;
-          this.RaisePropertyChanged("FirstName");
-          this.RaisePropertyChanged("FullName");
+            get
+            {
+                return this.firstName;
+            }
+
+            set
+            {
+                if (this.firstName != value)
+                {
+                    this.firstName = value;
+                    this.RaisePropertyChanged("FirstName");
+                    this.RaisePropertyChanged("FullName");
+                }
+            }
         }
-      }
-    }
 
-    /// <summary>
-    /// Gets or sets lastname.
-    /// </summary>
-    public string LastName
-    {
-      get
-      {
-        return this.lastName;
-      }
-
-      set
-      {
-        if (this.lastName != value)
+        /// <summary>
+        /// Gets or sets lastname.
+        /// </summary>
+        public string LastName
         {
-          this.lastName = value;
-          this.RaisePropertyChanged("LastName");
-          this.RaisePropertyChanged("FullName");
+            get
+            {
+                return this.lastName;
+            }
+
+            set
+            {
+                if (this.lastName != value)
+                {
+                    this.lastName = value;
+                    this.RaisePropertyChanged("LastName");
+                    this.RaisePropertyChanged("FullName");
+                }
+            }
         }
-      }
-    }
 
-    /// <summary>
-    /// Gets fullname.
-    /// </summary>
-    public string FullName
-    {
-      get
-      {
-        return this.firstName + " " + this.lastName;
-      }
-    }
+        /// <summary>
+        /// Gets fullname.
+        /// </summary>
+        public string FullName
+        {
+            get
+            {
+                return this.firstName + " " + this.lastName;
+            }
+        }
 
-    /// <summary>
-    /// raise property changed.
-    /// </summary>
-    /// <param name="property">property.</param>
-    private void RaisePropertyChanged(string property)
-    {
-      if (this.PropertyChanged != null)
-      {
-        this.PropertyChanged(this, new PropertyChangedEventArgs(property));
-      }
+        /// <summary>
+        /// raise property changed.
+        /// </summary>
+        /// <param name="property">property.</param>
+        private void RaisePropertyChanged(string property)
+        {
+            if (this.PropertyChanged != null)
+            {
+                this.PropertyChanged(this, new PropertyChangedEventArgs(property));
+            }
+        }
     }
-  }
 }

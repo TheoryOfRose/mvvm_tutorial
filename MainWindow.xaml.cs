@@ -9,18 +9,18 @@ using System.Windows;
 
 namespace MVVMDemo
 {
-  /// <summary>
-  /// MainWindow.
-  /// </summary>
-  public partial class MainWindow : Window
-  {
     /// <summary>
-    /// Initializes a new instance of the <see cref="MainWindow"/> class.
-    /// fdasfasdf.
+    /// MainWindow.
     /// </summary>
-    public MainWindow()
+    public partial class MainWindow : Window
     {
-      this.InitializeComponent();
+        /// <summary>
+        /// Initializes a new instance of the <see cref="MainWindow"/> class.
+        /// fdasfasdf.
+        /// </summary>
+        public MainWindow()
+        {
+            this.InitializeComponent();
+        }
     }
-  }
 }
