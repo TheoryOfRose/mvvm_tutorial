@@ -1,0 +1,41 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json",
+  "settings": {
+    "documentationRules": {
+      "xmlHeader": true,
+      "companyName": "AIRS Medical Inc",
+      "copyrightText": "Copyright (c) {companyName}. All rights reserved.\nSee LICENSE file in the project root for full license information.\n{projectName} can not be copied and/or distributed without the express permission of {companyName}.",
+      "headerDecoration": "---------------------------------------------------------------------",
+      "variables": {
+        "projectName": "SwiftMR"
+      }
+    },
+    "indentation": {
+      "indentationSize": 2,
+      "tabSize": 2,
+      "useTabs": false
+    },
+    "orderingRules": {
+      "systemUsingDirectivesFirst": false,
+      "usingDirectivesPlacement": "outsideNamespace",
+      "elementOrder": [
+        "kind",
+        "constant",
+        "accessibility",
+        "static",
+        "readonly"
+      ]
+    },
+    "namingRules": {
+      "allowCommonHungarianPrefixes": true,
+      "includeInferredTupleElementNames": true,
+      "tupleElementNameCasing": "PascalCase",
+      "allowedNamespaceComponents": [
+
+      ]
+    },
+    "layoutRules": {
+      "newlineAtEndOfFile": "require"
+    }
+  }
+}
