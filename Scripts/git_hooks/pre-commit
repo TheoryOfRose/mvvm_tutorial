@@ -4,17 +4,18 @@ HOME_DIR=$(git rev-parse --show-toplevel)
 DIFF_FILES=$(git diff --exit-code --cached --name-only --diff-filter=ACM -- "*.cs")
 
 echo "Auto formatting for the project by dotnet-format"
-echo "${DIFF_FILES}"
 
 if [ -z "${DIFF_FILES}" ]; then
   exit 0
 else
   echo "The following source codes are modified"
+  echo "${DIFF_FILES}"
   dotnet format ${HOME_DIR}/*.sln
   if [ $? -ne 0 ]; then
     echo "Dotnet format failed, please fix code and recommit"
     exit 1
   fi
+  git add .
 fi
 
 exit 0
